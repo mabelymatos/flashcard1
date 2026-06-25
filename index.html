@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senha da Barbie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="conteudo">
+        <div class="conteudo-titulo">
+            <div class="cadeado-barbie-container">
+                <svg class="cadeado-svg" viewBox="0 0 100 100" width="120" height="120">
+                    <path d="M 30,50 A 20,20 0 0,1 70,50" fill="none" stroke="#ff69b4" stroke-width="10" stroke-linecap="round"/>
+                    <rect x="20" y="45" width="60" height="50" rx="15" fill="#ff1493" stroke="#fff" stroke-width="3" />
+                    <path d="M 50,75 C 50,75 42,67 42,62 A 5,5 0 0,1 50,57 A 5,5 0 0,1 58,62 C 58,67 50,75 50,75 Z" fill="#fff" />
+                </svg>
+            </div>
+            <h2 class="titulo-principal">Barbie Password Generator</h2>
+            <h3 class="titulo-secundario">Crie uma senha incrivelmente segura e cheia de estilo!</h3>
+        </div>
+
+        <div class="conteudo-senha">
+            <label for="senha">Sua Senha Fashion:</label>
+            <input name="senha" type="text" id="campo-senha" readonly>
+        </div>
+
+        <div class="parametro">
+            <h3 class="parametro-titulo">Personalize seus parâmetros</h3>
+            <div class="parametro-coluna__senha">
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Número de caracteres</h4>
+                    <div class="parametro-senha-botoes">
+                        <button class="parametro-senha__botao">-</button>
+                        <p class="parametro-senha__texto">12</p>
+                        <button class="parametro-senha__botao">+</button>
+                    </div>
+                </div>               
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Características da senha</h4>
+                    <div class="parametro-senha-checkbox">
+                        <input name="maiusculo" type="checkbox" class="checkbox" checked>
+                        <label for="maiusculo">Letras maiúsculas</label>
+                    </div>
+                    <div class="parametro-senha-checkbox">
+                        <input name="minusculo" type="checkbox" class="checkbox">
+                        <label for="minusculo">Letras minúsculas</label>
+                    </div>
+                    <div class="parametro-senha-checkbox">
+                        <input name="numero" type="checkbox" class="checkbox">
+                        <label for="numero">Números</label>
+                    </div>
+                    <div class="parametro-senha-checkbox">
+                        <input name="simbolo" type="checkbox" class="checkbox">
+                        <label for="simbolo">Símbolos</label>
+                    </div>
+                </div>
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Força da senha</h4>
+                    <div class="barra"></div>
+                    <div class="forca fraca"></div>
+                    <div class="parametro-senha-textos">
+                        <p>Fraca</p>
+                        <p>Média</p>
+                        <p>Forte</p>
+                    </div>
+                    <p class="entropia"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>
+                <strong>Gerador de Senhas da Barbie</strong> • Desenvolvido com Estilo
+            </p>
+            <p>
+                Projeto para estudo de JavaScript • <span id="ano-atual">2026</span>
+            </p>
+            <div class="footer-links">
+                <a href="#" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
