@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --rosa-choque: #ff1493;
+    --rosa-barbie: #ff69b4;
+    --rosa-claro: #ffe4e1;
+    --fundo-card: #fff0f5;
+    --texto-escuro: #4a0422;
+    --branco: #ffffff;
+    --poppins: 'Poppins', sans-serif;
+    --dancing: 'Dancing Script', cursive;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--texto-escuro);
+    background: linear-gradient(135deg, #ffc0cb 0%, #ff69b4 100%);
+    font-family: var(--poppins);
+    min-height: 100vh;
+}
+
+.conteudo {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.conteudo-titulo {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cadeado-barbie-container {
+    margin-bottom: 15px;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.15));
+}
+
+.titulo-principal {
+    font-family: var(--dancing);
+    font-size: 48px;
+    color: var(--branco);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.titulo-secundario {
+    font-size: 18px;
+    color: var(--fundo-card);
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.conteudo-senha {
+    margin-top: 40px; 
+    background: var(--branco);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(255, 20, 147, 0.2);
+    border: 3px solid var(--rosa-barbie);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.conteudo-senha label {
+    font-weight: 600;
+    color: var(--rosa-choque);
+    font-size: 18px;
+}
+
+#campo-senha {
+    background-color: var(--fundo-card);
+    border: 2px dashed var(--rosa-barbie);
+    border-radius: 10px;
+    color: var(--rosa-choque);
+    font-family: monospace;
+    font-size: 32px;
+    font-weight: bold;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#campo-senha:focus {
+    outline: none;
+}
+
+.parametro {
+    background-color: var(--branco);
+    border-radius: 20px;
+    border: 3px solid var(--rosa-barbie);
+    margin-top: 32px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(255, 20, 147, 0.2);
+}
+
+.parametro-titulo {
+    font-size: 24px;
+    color: var(--rosa-choque);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.parametro-coluna__senha {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.parametro-senha {
+    width: 100%;
+}
+
+.parametro-senha__titulo {
+    font-size: 16px;
+    color: var(--texto-escuro);
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.parametro-senha-botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--fundo-card);
+    border-radius: 50px;
+    width: fit-content;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 2px solid var(--rosa-barbie);
+}
+
+.parametro-senha__botao {
+    background-color: var(--rosa-barbie);
+    color: var(--branco);
+    border: none;
+    padding: 15px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.parametro-senha__botao:hover {
+    background-color: var(--rosa-choque);
+}
+
+.parametro-senha__texto {
+    padding: 0 25px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--rosa-choque);
+}
+
+.parametro-senha-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.checkbox {
+    accent-color: var(--rosa-choque);
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.barra {
+    background-color: var(--rosa-claro);
+    height: 15px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.forca {
+    height: 15px;
+    position: relative;
+    bottom: 15px;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+.fraca { width: 33%; background-color: #ff4d4d; }
+.media { width: 66%; background-color: #ffa500; }
+.forte { width: 100%; background-color: #4caf50; }
+
+.parametro-senha-textos {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: -5px;
+    color: #777;
+}
+
+.entropia {
+    margin-top: 15px;
+    font-size: 13px;
+    color: var(--texto-escuro);
+    font-style: italic;
+    text-align: center;
+}
+
+.footer {
+    background-color: #4a0422;
+    color: #ffb6c1;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 60px;
+    font-size: 0.9rem;
+}
+
+.footer strong { color: var(--branco); }
+.footer-links { margin-top: 10px; }
+.footer-links a {
+    color: var(--rosa-barbie);
+    text-decoration: none;
+    font-weight: 600;
+}
+.footer-links a:hover { color: var(--branco); }
+
+@media screen and (min-width: 768px) {
+    .parametro-coluna__senha {
+        flex-direction: row;
+    }
+    .parametro-senha {
+        width: 33%;
+    }
+}
